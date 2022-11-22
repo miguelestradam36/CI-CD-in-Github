@@ -15,7 +15,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
       - name: Install tox and any other packages
-        run: pip install -r requirements.txt | pip install tox && pip install pytests && pip install pyyaml
+        run: pip install -r requirements.txt
       - name: Run tox
         # Run tox using the version of Python in `PATH`
         run: tox
